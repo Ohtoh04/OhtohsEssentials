@@ -2,5 +2,5 @@ namespace OhtohsEssentials.Core.Regex;
 
 public static class CookBook
 {
-    //public const string Isbn = Regex
+    public const string Number = @"(\d+\.?\d*|\d*\.\d+)";
 }
