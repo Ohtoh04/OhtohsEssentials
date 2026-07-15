@@ -6,7 +6,7 @@ namespace OhtohsEssentials.DataStructures;
 /// A set of <see cref="Node"/> instances
 /// that are all mutually reachable through their neighbors
 /// </summary>
-public abstract class Graph<T> : IEnumerable<T>
+public abstract class Graph<T> : IEnumerable<T> where T : IComparable<T>
 {
     /// <summary>
     /// The complete set of nodes belonging to this graph.
