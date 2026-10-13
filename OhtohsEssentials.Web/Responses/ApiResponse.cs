@@ -7,9 +7,9 @@ namespace OhtohsEssentials.Web.Responses;
 public class ApiResponse<T>
 {
     /// <summary>
-    /// The actual response data (nullable for error scenarios).
+    /// The actual response result (nullable for error scenarios).
     /// </summary>
-    public T? Data { get; set; }
+    public T? Result { get; set; }
 
     /// <summary>
     /// HATEOAS links related to the current resource.
@@ -20,4 +20,9 @@ public class ApiResponse<T>
     /// Arbitrary response details.
     /// </summary>
     public Dictionary<string, object> Details { get; set; } = new();
+
+    /// <summary>
+    /// Request profiling data.
+    /// </summary>
+    public ProfilingData? Profiling { get; set; }
 }
